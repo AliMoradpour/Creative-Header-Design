@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+.container {
+  height: 90vh;
+}
+.m-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 90vh;
+}
+.left {
+  background-color: red;
+  grid-column: 1/4;
+  background-image: url("./img/img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.right {
+  background-color: #222212;
+  grid-column: 4/7;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+.text {
+  position: absolute;
+  text-align: center;
+  top: 36%;
+  right: 38.4%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  background: linear-gradient(to right, #222212 45.3%, #fff 32%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wellcome {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.paragraph{
+    grid-column:3/5 ;
+    grid-row: 3/4;
+    font-size: 1.2rem;
+}
+.btn{
+    grid-column:3/4 ;
+    grid-row: 4/5;
+    align-self: center;
+    padding: .7rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.btn:hover{
+    color: blue;
+    background-color:#fff;
+}
